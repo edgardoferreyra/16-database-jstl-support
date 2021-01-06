@@ -76,7 +76,6 @@ public class OperationController extends HttpServlet {
 			
 			break;
 		case "updateuseroperation":
-			System.out.println(request.getParameter("usersId"));
 			User updatedUser = new User(Integer.parseInt(request.getParameter("usersId")),
 					request.getParameter("username"),
 					request.getParameter("email"));
